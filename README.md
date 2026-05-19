@@ -23,7 +23,7 @@ User Roles
 | Hospital Admin : Manage nurses, view donation records
 | System Admin : Full system control, manage all users
 
-🔑 Login Credentials
+ Login Credentials
 
 | Role | Email | Password
 | System Admin : admin.bloodbank@gmail.com | admin123 |
