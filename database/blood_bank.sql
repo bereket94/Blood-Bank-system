@@ -123,3 +123,9 @@ INSERT INTO donors (name, email, password, phone, age, weight, blood_group, dise
 ('Tigist Haile', 'tigisthaile@gmail.com', 'donor123', '0934567890', 22, 65, 'B+', 'None', 0),
 ('Meron Desta', 'merondesta@gmail.com', 'donor123', '0945678901', 28, 68, 'O-', 'None', 1),
 ('Kebede Tesfaye', 'kebedetesfaye@gmail.com', 'donor123', '0956789012', 35, 80, 'AB+', 'None', 0);
+
+-- Update all table - convert plain text to MD5
+UPDATE donors SET password = MD5(password);
+UPDATE admins SET password = MD5(password);
+UPDATE hospitals SET password = MD5(password);
+UPDATE nurses SET password = MD5(password);
