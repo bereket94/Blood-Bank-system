@@ -14,21 +14,25 @@ CREATE TABLE IF NOT EXISTS admins (
 );
 
 -- 2. Donors Table
-CREATE TABLE IF NOT EXISTS donors (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    phone VARCHAR(20),
-    age INT NOT NULL,
-    weight DECIMAL(5,2) NOT NULL,
-    blood_group VARCHAR(5),
-    diseases VARCHAR(255),
-    last_donation_date DATE,
-    total_donations INT DEFAULT 0,
-    is_active BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+CREATE TABLE `donors` (
+  `id` int(11) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `age` int(11) NOT NULL,
+  `weight` decimal(5,2) NOT NULL,
+  `blood_group` varchar(5) DEFAULT NULL,
+  `diseases` varchar(255) DEFAULT NULL,
+  `last_donation_date` date DEFAULT NULL,
+  `total_donations` int(11) DEFAULT 0,
+  `is_active` tinyint(1) DEFAULT 1,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `reset_token` varchar(100) DEFAULT NULL,
+  `token_expiry` datetime DEFAULT NULL
+) ;
 
 -- 3. Hospitals Table
 CREATE TABLE IF NOT EXISTS hospitals (
@@ -119,8 +123,3 @@ INSERT INTO donors (name, email, password, phone, age, weight, blood_group, dise
 ('Tigist Haile', 'tigisthaile@gmail.com', 'donor123', '0934567890', 22, 65, 'B+', 'None', 0),
 ('Meron Desta', 'merondesta@gmail.com', 'donor123', '0945678901', 28, 68, 'O-', 'None', 1),
 ('Kebede Tesfaye', 'kebedetesfaye@gmail.com', 'donor123', '0956789012', 35, 80, 'AB+', 'None', 0);
-
-
--- Add reset token columns to donors table
-ALTER TABLE donors ADD COLUMN reset_token VARCHAR(100) NULL;
-ALTER TABLE donors ADD COLUMN token_expiry DATETIME NULL;
