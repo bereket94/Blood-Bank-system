@@ -83,6 +83,19 @@ CREATE TABLE IF NOT EXISTS system_logs (
     ip_address VARCHAR(50),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+-- 7. Reports Table (for nurse to hospital admin communication)
+CREATE TABLE IF NOT EXISTS reports (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nurse_id INT NOT NULL,
+    hospital_id INT NOT NULL,
+    report_type VARCHAR(20) NOT NULL,
+    report_data TEXT NOT NULL,
+    status VARCHAR(20) DEFAULT 'sent',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    viewed_at TIMESTAMP NULL,
+    FOREIGN KEY (nurse_id) REFERENCES nurses(id) ON DELETE CASCADE,
+    FOREIGN KEY (hospital_id) REFERENCES hospitals(id) ON DELETE CASCADE
+);
 -- Insert Admins
 INSERT INTO admins (name, email, password, phone, role) VALUES
 ('System Admin', 'admin.bloodbank@gmail.com', 'admin123', '0912345678', 'super_admin'),
