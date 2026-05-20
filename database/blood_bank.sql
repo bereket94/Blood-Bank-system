@@ -118,7 +118,6 @@ INSERT INTO nurses (hospital_id, name, email, password, phone) VALUES
 
 -- Insert Donors
 INSERT INTO donors (name, email, password, phone, age, weight, blood_group, diseases, total_donations) VALUES
-('John Doe', 'johndoe@gmail.com', 'donor123', '0912345678', 25, 70, 'O+', 'None', 2),
 ('Abebe Kebede', 'abebekebede@gmail.com', 'donor123', '0923456789', 30, 75, 'A+', 'None', 1),
 ('Tigist Haile', 'tigisthaile@gmail.com', 'donor123', '0934567890', 22, 65, 'B+', 'None', 0),
 ('Meron Desta', 'merondesta@gmail.com', 'donor123', '0945678901', 28, 68, 'O-', 'None', 1),
