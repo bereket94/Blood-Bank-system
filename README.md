@@ -25,10 +25,10 @@ User Roles<br>
 
  Login Credentials
 
-| Role | Email | Password
-| System Admin : admin.bloodbank@gmail.com | admin123 |
-| Donor : johndoe@gmail.com | donor123 |
-| Nurse : sarah.nurse@gmail.com | nurse123 |
+| Role | Email | Password<br>
+| System Admin : admin.bloodbank@gmail.com | admin123 |<br>
+| Donor : johndoe@gmail.com | donor123 |<br>
+| Nurse : sarah.nurse@gmail.com | nurse123 |<br>
 | Hospital Admin : wolkite.hospital@gmail.com | hospital123 |
 
 Installation
