@@ -1,6 +1,3 @@
-# Database config (has password)
-config/db_connect.php
-
 # IDE files
 .vscode/
 .idea/
