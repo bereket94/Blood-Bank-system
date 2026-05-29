@@ -1,27 +1,27 @@
 # 🩸 Blood Bank Management System
 
-A web-based system for managing blood donations, appointments, donors, nurses, hospitals, and blood inventory.
+A web-based system for managing blood donations, appointments, donors, nurses, hospitals, and blood inventory.<br>
 
-Developed by
-Bereket Asfaw
+Developed by<br>
+Bereket Asfaw<br>
 
-Technologies
+Technologies<br>
 
-| Layer Technology
+| Layer Technology<br>
 
-| Frontend: HTML5, CSS3, JavaScript
-| Backend: PHP 8.0
-| Database: MySQL
-| Server: Apache (XAMPP)
+| Frontend: HTML5, CSS3, JavaScript<br>
+| Backend: PHP 8.0<br>
+| Database: MySQL<br>
+| Server: Apache (XAMPP)<br>
 
-User Roles
+User Roles<br>
 
-| Role | Responsibilities
+| Role | Responsibilities<br>
 
-| Donor : Register, book appointments, check eligibility
-| Nurse : Verify donors, update donation status
-| Hospital Admin : Manage nurses, view donation records
-| System Admin : Full system control, manage all users
+| Donor : Register, book appointments, check eligibility<br>
+| Nurse : Verify donors, update donation status<br>
+| Hospital Admin : Manage nurses, view donation records<br>
+| System Admin : Full system control, manage all users<br>
 
  Login Credentials
 
@@ -46,17 +46,17 @@ Security Features
 - ✅ Prepared Statements (SQL Injection prevention)
 - ✅ MD5 Password Hashing
 - ✅ Session Management
-- ✅ Role-Based Access Control
+- ✅ Role-Based Access Control<br>
 
-Project Structure
+Project Structure<br>
 
-Blood-Bank-system/
-|
-├── admin/ # Admin module
-├── donor/ # Donor module
-├── nurse/ # Nurse module
-├── hospital/ # Hospital module
-├── config/ # Database config
-├── css/ # Stylesheets
-├── database/ # SQL file
-└── index.php # Landing page
+Blood-Bank-system/<br>
+|<br>
+├── admin/ # Admin module<br>
+├── donor/ # Donor module<br>
+├── nurse/ # Nurse module<br>
+├── hospital/ # Hospital module<br>
+├── config/ # Database config<br>
+├── css/ # Stylesheets<br>
+├── database/ # SQL file<br>
+└── index.php # Landing page<br>
